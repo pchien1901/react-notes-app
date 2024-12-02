@@ -6,6 +6,7 @@ import Header from "./components/Header";
  
 const App = () => {
   // setState ban đầu nếu trong localStorage có dữ liệu thì lấy dữ liệu trong đó còn nếu không thì thôi
+
   const [notes, setNotes] = useState(() => {
     const savedNotes = JSON.parse(localStorage.getItem('react-notes-app'));
     return savedNotes || [
